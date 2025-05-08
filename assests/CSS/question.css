@@ -22,17 +22,8 @@ body {
 .cloud-image {
   display: block;
   width: 100%;
-  height: auto;
-}
-
-.cloud-text {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: lightblue;
-  font-size: 1em; /* Slightly smaller font for mobile */
-  white-space: nowrap;
+  height: auto; /* Changed from auto% to auto */
+  border-radius: 10px;
 }
 
 #start-button {
@@ -50,7 +41,13 @@ body {
   max-width: 300px; /* Smaller max width for phones */
 }
 
-#start-button a {
+.answers {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Space between buttons */
+}
+
+#answer-btn-0 {
   color: white;
   text-decoration: none;
   display: block;
@@ -59,9 +56,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px; /* Space between buttons */
+  margin-top: 2em;
+  width: 80%;
+  max-width: 300px;
+  background-color: #4c7faf;
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  font-size: 1em; /* Smaller font for mobile */
+  cursor: pointer;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
-#restart-button {
+#start-over-btn {
   background-color: #4c7faf;
   border: none;
   color: white;
@@ -76,7 +85,7 @@ body {
   max-width: 300px; /* Smaller max width for phones */
 }
 
-#restart-button a {
+#answer-btn-1 {
   color: white;
   text-decoration: none;
   display: block;
@@ -85,18 +94,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px; /* Space between buttons */
+  margin-top: 2em;
+  width: 80%;
+  max-width: 300px;
+  background-color: #4c7faf;
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  font-size: 1em; /* Smaller font for mobile */
+  cursor: pointer;
+  border-radius: 30px;
+  text-decoration: none;
 }
 
-#question-answers {
+.question-content {
   display: flex;
-  flex-direction: column; /* Stack buttons vertically on smaller screens */
+  flex-direction: column; /* Stack items vertically on smaller screens */
   gap: 10px; /* Space between buttons */
   color: lightblue;
   margin-top: 2em; /* Space above the answers */
-
   padding: 10px;
 }
-
 /* Media query for larger screens (min-width: 481px) - Tablets and Desktops */
 @media (min-width: 650px) {
   body {
@@ -122,7 +141,6 @@ body {
 /* Media query for even larger desktops (min-width: 769px) - Optional adjustments */
 @media (min-width: 900px) {
   .container {
-    max-width: 90%; /* Wider container for larger desktops */
+    /* Further adjustments for wider screens if needed */
   }
 }
-

@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Karen Bourgeois, Zack Bourgeois">
-    <meta description="Jeu de devinette de nombre">
-    <meta keywords="Jeu, devinette, nombre, HTML, CSS, JavaScript">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Karen Bourgeois, Zack Bourgeois" />
+    <meta description="Jeu de devinette de nombre" />
+    <meta keywords="Jeu, devinette, nombre, HTML, CSS, JavaScript" />
     <title>Quel est le vrai?</title>
-    <link rel="stylesheet" href="../assests/CSS/style.css">
-</head>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    </head>
 
-<body>
-    
+  <body>
     <div class="container">
-        <div id="score-container">
-            <h3>Score:</h3>
-            <h3 id="score-text"></h3>
+      
+
+      <div id="cloud-container" class="container">
+        <img
+        src="../images/imgbin_frame-cloud-png.png"
+        alt="cloud image"
+        class="cloud-image"
+      >
+        <div class="cloud-text">
+          <h3>Score:</h3>
+          <h3 id="cloud-text"></h3>
         </div>
-        <div id="question-answers"></div>
+        <button id="restart-button">Recommencer</button>
+      </div>
+      <div id="question-answers"></div>
     </div>
 
-</body>
-
+    <script src="../assests/JS/script.js"></script>
+    <script src="../assests/JS/results.js"></script>
+  </body>
 </html>
