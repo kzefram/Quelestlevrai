@@ -2,26 +2,40 @@
 
 <html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Karen Bourgeois, Zack Bourgeois">
-    <meta description="Jeu de devinette de nombre">
-    <meta keywords="Jeu, devinette, nombre, HTML, CSS, JavaScript">
-    <title>Quel est le vrai?</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Karen Bourgeois, Zack Bourgeois" />
+    <meta description="Jeu de devinette de nombre" />
+    <meta keywords="Jeu, devinette, nombre, HTML, CSS, JavaScript" />
+    <title>Quel est le vrai? - Question</title>
+    <link rel="stylesheet" href="../CSS/question.css" />
+  </head>
 
-<body>
-
-    <div id="Question1" class="container">
-        <img class="image" src="https://placehold.co/600x400" alt="" >
-        <div id="answers" class="answers">
-            <h2 id="answerA" class="answerA">$$$$</h2>
-            <h2 id="answerB" class="answerB">$$$$</h2>
+  <body>
+    <div id="cloud-container" class="container question-page">
+      <div class="question-content">
+        <div id="timer">Temps restant: <span id="time-left"></span></div>
+        <br>
+        <img
+          src="https://picsum.photos/200/300"
+          alt="product picture"
+          class="cloud-image"
+        />
+        <br><br>
+        <div id="question-container">
+          <h2 id="question"></h2>
+          <div class="answers">
+            <button id="answer-btn-0"></button>
+            <button id="answer-btn-1"></button>
+          </div>
         </div>
+        <br>
+        <br>
+      </div>
     </div>
 
-</body>
-
+    <script src="../assests/JS/script.js"></script>
+    <script src="../assests/JS/timer.js"></script>
+  </body>
 </html>
