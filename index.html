@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,22 +12,39 @@
   </head>
 
   <body>
-    <div id="cloud-container" class="container">
-      <img
-        src="./assests/images/imgbin_frame-cloud-png.png"
-        alt="cloud"
-        class="cloud-image"
-      />
-      <div class="cloud-text">
-        <h2>
-          Quel est<br />
-          le vrai?
-        </h2>
-      </div>
-      <div id="start-button">
-        <a>Commencer!</a>
-      </div>
-    </div>
+    Q1: Quel est le vrai?<br>
+    <input type="radio" name="question1" id="correct1"/>$4.99<br>
+    <input type="radio" name="question1" />$5.99<br><br>
+
+    Q2: Quel est le vrai?<br>
+    <input type="radio" name="question2" id="correct2"/>$4.99<br>
+    <input type="radio" name="question2" />$5.99<br><br>
+
+    Q3: Quel est le vrai?<br>
+    <input type="radio" name="question3" id="correct3"/>$4.99<br>
+    <input type="radio" name="question3" />$5.99<br><br>
+    <input type="button" value="Soumettre" id="submit" onclick="results()"/>
+
+    <script type="text/javascript">
+
+      function results() {
+        var score = 0;
+
+        if (document.getElementById("correct1").checked) {
+          score++;
+        }
+        if (document.getElementById("correct2").checked) {
+          score++;
+        }
+        if (document.getElementById("correct3").checked) {
+          score++;
+        }
+        window.document.write("Vous avez " + score + " bonnes réponses sur 3.");
+        window.document.write("<br><br>");
+      }
+
+    </script>
+
   </body>
-  <script src="./assests/Javascript/script.js"></script>
+
 </html>
