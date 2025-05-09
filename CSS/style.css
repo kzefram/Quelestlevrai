@@ -89,12 +89,63 @@ body {
 
 #question-answers {
   display: flex;
-  flex-direction: column; /* Stack buttons vertically on smaller screens */
-  gap: 10px; /* Space between buttons */
+  flex-direction: row;
+  justify-content: center; /* Center answers horizontally */
+  gap: 15px; /* Space between buttons */
   color: lightblue;
   margin-top: 2em; /* Space above the answers */
-
+  list-style: none; /* Remove default list styling */
   padding: 10px;
+
+}
+
+.title {
+  color: lightblue;
+  font-size: 7em; /* Smaller font for mobile */
+  margin-top: 20px; /* Space above the title */
+}
+
+.card {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  background-color: #4c7faf;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0; /* Space between cards */
+  width: 95%; /* Full width for cards */
+}
+
+.card h2 {
+  color: lightblue;
+  font-size: 2.5em; /* Smaller font for mobile */
+}
+
+.price {
+  font-size: 2em; /* Smaller font for mobile */
+  color: lightblue;
+}
+
+.question-image {
+  width: 100%; /* Full width for product images */
+  height: auto;
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+.btn {
+  background-color: #4c7faf;
+  border: none;
+  color: white;
+  padding: 2em 3em;
+  font-size: 1.5em; /* Smaller font for mobile */
+  cursor: pointer;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2em;
+  width: 80%;
+  max-width: 300px; /* Smaller max width for phones */
 }
 
 /* Media query for larger screens (min-width: 481px) - Tablets and Desktops */
@@ -121,8 +172,7 @@ body {
 
 /* Media query for even larger desktops (min-width: 769px) - Optional adjustments */
 @media (min-width: 900px) {
-  .container {
-    max-width: 90%; /* Wider container for larger desktops */
+ /* Adjustments for larger desktops */
   }
-}
+  
 
