@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Karen Bourgeois, Zack Bourgeois" />
+    <meta description="Jeu de devinette de nombre" />
+    <meta keywords="Jeu, devinette, nombre, HTML, CSS, JavaScript" />
+    <title>Quel est le vrai?</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+
+  <Body>
+    <div class="cloud-container">
+        <img src="./images/imgbin_frame-cloud-png.png" alt="Cloud Image" class="cloud-image">
+        <div class="cloud-title">
+            <h2 >Les Results</h2>
+        </div>
+
+        <p class="cloud-text">Vous avez eu <span id="score"></span> sur 3</p>
+        <button id="restart-button">Recommencer</button>
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            // Retrieve the score from localStorage
+            const finalScore = localStorage.getItem('finalScore');
+
+            // Get the score display element
+            const scoreDisplay = document.getElementById('score');
+
+            // If the score was found in localStorage and the display element exists
+            if (finalScore !== null && scoreDisplay) {
+                scoreDisplay.textContent = finalScore;
+            }
+
+            // Optional: Add functionality for the restart button
+            const restartButton = document.getElementById('restart-button');
+            if (restartButton) {
+                restartButton.addEventListener('click', function() {
+                    localStorage.removeItem('finalScore'); // Clear the stored score
+                    window.location.href = './questions.html'; // Redirect to the start page
+                });
+            }
+        });
+    </script>
+
+  </Body>
+
+  </html>

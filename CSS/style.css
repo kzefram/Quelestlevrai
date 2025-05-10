@@ -64,3 +64,43 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.cloud-container {
+  position: relative; /* Make the container the positioning context */
+  display: inline-block; /* Or block, depending on how you want it to behave */
+}
+
+.cloud-image {
+  display: block; /* Remove any default inline spacing */
+  width: 100%; /* Make the image responsive within its container */
+  height: auto;
+  padding-top: 200px;
+}
+
+.cloud-title {
+  position: absolute; /* Position the title relative to the closest positioned ancestor (cloud-container) */
+  top: 35%;         /* Vertically center the title */
+  left: 50%;        /* Horizontally center the title */
+  transform: translate(-50%, -50%); /* Adjust for the title's own dimensions */
+  color: lightblue;      /* Or your desired text color */
+  font-size: 5em;    /* Adjust the font size */
+  text-align: center; /* Ensure text is centered within its own bounds */
+  /* Add any other desired styling for the title (font-family, background, etc.) */
+}
+
+.cloud-text {
+  color: lightblue;
+  font-size: 90px;
+  padding-bottom: 50px;
+}
+
+#restart-button {
+  background-color: #6699ff;
+  color: lightblue;
+  border: none;
+  padding: 55px 100px;
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
