@@ -29,7 +29,7 @@ body {
   background-color: #6699ff;
   color: lightblue;
   border: none;
-  padding: 55px 100px;
+  padding: 55px 80px;
   font-size: 50px;
   cursor: pointer;
   border-radius: 5px;
@@ -84,7 +84,7 @@ body {
   left: 50%;        /* Horizontally center the title */
   transform: translate(-50%, -50%); /* Adjust for the title's own dimensions */
   color: lightblue;      /* Or your desired text color */
-  font-size: 5em;    /* Adjust the font size */
+  font-size: 3em;    /* Adjust the font size */
   text-align: center; /* Ensure text is centered within its own bounds */
   /* Add any other desired styling for the title (font-family, background, etc.) */
 }
@@ -99,7 +99,7 @@ body {
   background-color: #6699ff;
   color: lightblue;
   border: none;
-  padding: 55px 100px;
+  padding: 55px 80px;
   font-size: 50px;
   cursor: pointer;
   border-radius: 10px;

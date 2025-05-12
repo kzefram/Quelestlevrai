@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,80 +9,83 @@
     <meta keywords="Jeu, devinette, nombre, HTML, CSS, JavaScript" />
     <title>Quel est le vrai?</title>
     <style>
-        body {
-            font-family: "Poppins", sans-serif;
-            background-color: #8c53ff;
-            margin: 0;
-            display: flex;
-            flex-direction: column; /* Stack items vertically on smaller screens */
-            align-items: center;
-            justify-content: flex-start; /* Align from the top initially */
-            min-height: 100vh;
-            text-align: center; /* Center content horizontally */
-            padding: 20px; /* Add some padding around content on small screens */
-            box-sizing: border-box; /* Include padding in width calculation */
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #8c53ff;
+        margin: 0;
+        display: flex;
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+        justify-content: flex-start; /* Align from the top initially */
+        min-height: 100vh;
+        text-align: center; /* Center content horizontally */
+        padding: 20px; /* Add some padding around content on small screens */
+        box-sizing: border-box; /* Include padding in width calculation */
+      }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-        .cloud-container {
-            position: relative;
-        }
+      .cloud-container {
+        position: relative;
+      }
 
-        .cloud-image {
-            width: 90%; /* Adjust size as needed */
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto; /* Center the image */
-            max-width: 600px; /* Set a max width for larger screens */
-        }
+      .cloud-image {
+        width: 90%; /* Adjust size as needed */
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Center the image */
+        max-width: 600px; /* Set a max width for larger screens */
+      }
 
-        .cloud-title {
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: lightblue; /* Adjust color as needed */
-            font-size: 1.5em; /* Adjust size as needed */
-            text-align: center;
-        }
+      .cloud-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: lightblue; /* Adjust color as needed */
+        font-size: 1.5em; /* Adjust size as needed */
+        text-align: center;
+      }
 
-        #start-button {
-            background-color: #6699ff;
-            color: lightblue;
-            border: none;
-            padding: 60px 90px;
-            font-size: 50px;
-            cursor: pointer;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin-top: 100px;
-        }
+      #start-button {
+        background-color: #6699ff;
+        color: lightblue;
+        border: none;
+        padding: 50px 60px;
+        font-size: 50px;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: 100px;
+      }
 
-        #start-button:hover {
-            background-color: #0056b3;
-        }
+      #start-button:hover {
+        background-color: #5577cc;
+      }
     </style>
   </head>
 
   <body>
     <div class="container">
-        <div class="cloud-container">
-            <img src="./images/imgbin_frame-cloud-png.png" alt="Cloud" class="cloud-image">
-            <div class="cloud-title">
-                <h1>Quel est le vrai?</h1>
-            </div>
+      <div class="cloud-container">
+        <img
+          src="./images/imgbin_frame-cloud-png.png"
+          alt="Cloud"
+          class="cloud-image"
+        />
+        <div class="cloud-title">
+          <h1>Quel est le vrai?</h1>
         </div>
-        <a href="./questions.html">
+      </div>
+      <a href="./questions.html">
         <button id="start-button">Commencer!</button>
-        </a>
+      </a>
     </div>
   </body>
-
 </html>
