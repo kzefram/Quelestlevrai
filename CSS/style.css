@@ -29,7 +29,7 @@ body {
   background-color: #6699ff;
   color: lightblue;
   border: none;
-  padding: 55px 100px;
+  padding: 55px 80px;
   font-size: 50px;
   cursor: pointer;
   border-radius: 5px;
@@ -84,7 +84,7 @@ body {
   left: 50%;        /* Horizontally center the title */
   transform: translate(-50%, -50%); /* Adjust for the title's own dimensions */
   color: lightblue;      /* Or your desired text color */
-  font-size: 5em;    /* Adjust the font size */
+  font-size: 3em;    /* Adjust the font size */
   text-align: center; /* Ensure text is centered within its own bounds */
   /* Add any other desired styling for the title (font-family, background, etc.) */
 }
@@ -99,9 +99,52 @@ body {
   background-color: #6699ff;
   color: lightblue;
   border: none;
-  padding: 55px 100px;
+  padding: 55px 80px;
   font-size: 50px;
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#restart-button:hover {
+  background-color: #5577cc;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    justify-content: center; /* Center items vertically */
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .questions {
+    font-size: 40px; /* Adjust font size for smaller screens */
+    padding-bottom: 10px; /* Reduce padding */
+  }
+
+  #submit {
+    padding: 30px 50px; /* Adjust padding for smaller screens */
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .card {
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin: 10px; /* Reduce margin for smaller screens */
+    width: 73%; /* Make the card responsive */
+  }
+
+  .answers {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .title {
+    font-size: 50px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Reduce margin */
+  }
+
+  .product-image {
+    width: 75%; /* Make the image responsive within its container */
+    height: auto;
+  }
+  
 }
