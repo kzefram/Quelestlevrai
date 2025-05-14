@@ -105,3 +105,46 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+#restart-button:hover {
+  background-color: #5577cc;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    justify-content: center; /* Center items vertically */
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .questions {
+    font-size: 40px; /* Adjust font size for smaller screens */
+    padding-bottom: 10px; /* Reduce padding */
+  }
+
+  #submit {
+    padding: 30px 50px; /* Adjust padding for smaller screens */
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .card {
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin: 10px; /* Reduce margin for smaller screens */
+    width: 73%; /* Make the card responsive */
+  }
+
+  .answers {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .title {
+    font-size: 50px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Reduce margin */
+  }
+
+  .product-image {
+    width: 75%; /* Make the image responsive within its container */
+    height: auto;
+  }
+  
+}
